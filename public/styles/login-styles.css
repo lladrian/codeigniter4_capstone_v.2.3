@@ -1,0 +1,249 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+background: wheat;
+}
+/* html {
+    background-image: url('../assets/logincontent.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+} */
+
+@media screen and (max-width: 600px) {
+    html {
+        background-size: contain; /* Change to 'contain' for smaller screens */
+    }
+}
+
+
+
+html, body {
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(4, 2, 15, 0.552);
+    color: #fff;
+    padding: 3px 20px;
+    width: 100%;
+
+}
+
+nav > .logo > a > img {
+    width: 50px; /* Adjust the width of the logo as needed */
+}
+
+nav > .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav > .nav-links > li {
+    display: inline-block;
+    margin-right: 20px; /* Adjust the spacing between links as needed */
+}
+
+nav > .nav-links > li:last-child {
+    margin-right: 0;
+}
+
+nav > .nav-links > li > a {
+    font-family:  "Poppins", sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.login-container {
+    background-color: rgba(210, 208, 222, 0.752); /* Transparent background color */
+    padding: 20px; /* Add padding to create space between container edges and content */
+    border-radius: 10px;
+    width: 340px; /* Increase width to accommodate padding */
+    margin: 100px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Styles for the login form */
+.login-container > .login-form {
+    color: #fff;
+}
+
+.login-container > .login-form > h2 {
+    text-align: center;
+}
+
+.login-container > .login-form > .form-group {
+    margin-bottom: 20px;
+}
+
+.login-container > .login-form > .form-group > label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-container > .login-form > .form-group > input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-container > .login-form > .submitbtn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.login-container > .login-form >  .submitbtn:hover {
+    background-color: #0056b3;
+}
+
+.login-container > .login-form > .otpsubmitbtn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(14, 190, 23);
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.login-container > .login-form >  .otpsubmitbtn:hover {
+    background-color: #059c17;
+}
+
+
+.login-container > div > .forgotbtn,
+.login-container > div > a > .forgotbtn {
+    text-decoration: none;
+    width: 100%;
+    padding: 8px 0px;
+    border-radius: 5px;
+    border: none;
+    background-color: #c53d3d;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px 0px; 
+} 
+
+.login-container > div > .forgotbtn:hover,
+.login-container > div > a >.forgotbtn:hover {
+    background-color: #cb1b1b;
+}
+
+.login-container > a > .loginbtn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2a27de;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px auto 0;
+    text-decoration: none;
+}
+
+.login-container > a > .loginbtn:hover {
+    background-color: #0c139e;
+    text-decoration: none;
+}
+
+
+.logos {
+    position: absolute;
+    margin: 100px auto 0;
+    top: 10px;
+    width: 130px; /* Adjust width as needed */
+    height: 130px; /* Adjust height as needed */
+  }
+
+.logos.left {
+    left: 200px;
+}
+
+.logos.right {
+    right: 200px;
+}
+
+
+.welcome {
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    height: 80%; /* Set the height of the container */
+    text-align: center; /* Center align text */
+    font-size: 37px
+}
+
+.welcome > .larger-text {
+    font-size: 50px; /* Increase font size for the text */
+}
+
+
+.btn {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+}
+
+.btn > div > .evsubtn {
+    text-decoration: none;
+    text-align:center;
+    display: inline-block; 
+    width: 300px; /* Adjust width as needed */
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #c4153b;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px auto ;
+  }
+  
+.btn > div > .evsubtn:hover {
+    background-color: #9e0606;
+  }
+  
+
+.btn > div > .coabtn {
+    text-decoration: none;
+    text-align:center;
+    display: inline-block; 
+    width: 300px; /* Adjust width as needed */
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+.btn > div > .coabtn:hover {
+    background-color: #0056b3;
+  }
+
